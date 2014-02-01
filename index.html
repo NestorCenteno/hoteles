@@ -4,9 +4,14 @@
     <meta charset="utf-8">
 	<title>HOTELES</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" />
-	<script src="js/jquery.js"></script>
-	<script src="js/jqmobile.js"></script>
+    <!--
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>-->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jqmobile.js"></script>
+    <script src="js/API/eventos.js"></script>
 </head>
 <body>
 	<div data-role="page" id="home">
@@ -21,7 +26,7 @@
             </ul>
         </div>
 	   <div data-role="footer" data-position="fixed">
-            <h4>Pie</h4>
+            <a href="#nosotros" class="ui-btn" data-transition="slideup">Nosotros</a>
        </div>
     </div>
     <div data-role="page" id="priv">
@@ -109,6 +114,32 @@
             </div><!-- /navbar -->
             
        </div>
+    </div>
+    <div data-role="page" id="nosotros">
+        <div data-role="header">
+         <h1>Nosotros</h1>
+         <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext" data-rel="back">Atras</a>
+        </div>
+        <div role="main" class="ui-content">
+            <p>Compressed and uncompressed copies of jQuery files are available. The uncompressed file is best used during development or debugging; the compressed file saves bandwidth and improves performance in production. You can also download a sourcemap file for use when debugging with a compressed file. The map file is not required for users to run jQuery, it just improves the developer's debugger experience.</p>
+        </div>
+    </div>
+    <div data-role="page" id="registro">
+        <div data-role="header">
+         <h1>Registro</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <ul data-role="listview">
+                <li><input type="text" id="regNom" placeholder="Nombre"/></li>
+                <li><input type="email" id="regMail" placeholder="Correo Electrónico"/></li>
+                <li><input type="tel" id="regTel" placeholder="Teléfono"/></li>
+                <li><a href="#" id="regFoto">Tomar Foto</a></li>
+                
+            </ul>
+            <br />
+            <a href="#" id="regEnv" class="ui-btn">Registrar</a>
+            <div id="regMFoto"></div>
+        </div>
     </div>
 </body>
 </html>
