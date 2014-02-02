@@ -8,8 +8,9 @@ $(function(){
             var tel=$('#regTel').val();
             if(nom !='' && mail !='' && tel !=''){
                 alert(nom+' - '+mail+' - '+tel);
+                //navigator.notification.alert(nom+' - '+mail+' - '+tel,null/*funciona cuando den aceptar*/,'Registro','Intentar de nuevo');
             }else{
-                navigater.notification.alert('Todos los campos son requeridos',null/*funciona cuando den aceptar*/,'Registro','Intentar de nuevo');
+                navigator.notification.alert('Todos los campos son requeridos',null/*funciona cuando den aceptar*/,'Registro','Intentar de nuevo');
             }
         });     
     },false);
