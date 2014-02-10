@@ -10,12 +10,11 @@ function tomarFoto(){
         path = mediaFiles[i].fullPath;
         
         }*/
-
     // capture error callback
     var captureError = function(error) {
         navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
     };
     
     // start video capture
-    navigator.device.capture.captureVideo(captureSuccess, captureError, {limit:2});
+    navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});
 }
